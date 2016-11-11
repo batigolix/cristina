@@ -1,0 +1,205 @@
+@import "bourbon/bourbon";
+@import "base/base";
+@import "partials/base";
+@import "grid-settings";
+@import "neat/neat";
+
+body {
+  font-size: 0.8em;
+  @include font;
+}
+
+a {
+  &:active, &:link, &:visited {
+    color: $medium_grey;
+  }
+  &:hover {
+    color: $celestial;
+  }
+  &:active {
+    color: #000;
+  }
+}
+
+main {
+  @include outer-container;
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @include header-font;
+    line-height: 1.3em;
+    color: $dark_grey;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  // action-tabs is entity view, edit, delete, etc.
+  .action-tabs {
+    margin: 0 0 1.5em 0;
+    li {
+      a {
+        background: darkgreen;
+        color: white;
+        padding: 0.4em 0.8em 0.4em 0.8em;
+        font-size: 1.1em;
+        border: 2px solid #000;
+        text-decoration: none;
+      }
+      list-style: none;
+      display: inline;
+    }
+  }
+
+  // work groups view
+  .work-groups, .works, .news {
+    font-size: 0.9em;
+    ul {
+      li.work, li.news-item {
+        h2 {
+          font-size: 0.9em;
+          font-weight: bold;
+        }
+      }
+      li.work {
+        article {
+          float:left;
+          width:100%;
+          border-bottom: 2px solid $light_grey;
+          padding: 1em 0 1em 0;
+        }
+        .col1 {
+          float:left;
+          width: 20%;
+        }
+        .col2 {
+          float:left;
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  // prev next nav
+  .prev-next-nav {
+    margin: 1em 0 1em 0;
+    min-height: 2em;
+    a {
+      text-decoration: underline;
+    }
+    .prev {
+      float: left;
+    }
+    .next {
+      float: right;
+    }
+
+  }
+
+  .credits {
+    clear: both;
+  }
+
+  //pagination
+  .pager .pager__items {
+    margin: 1em 0 1em 0;
+    min-height: 2em;
+    .pager__item {
+      padding: 0.3em 0.7em 0.3em 0.7em;
+      display: inline-block;
+      margin: 0 0.5em 0 0;
+      border: 1px solid $light_grey;
+      &.is-active {
+        font-weight: bold;
+        border: 2px solid $medium_grey;
+      }
+      &:hover {
+        background: $celestial;
+        a {
+          color: #FFF;
+        }
+      }
+    }
+    .pager__item--first,
+    .pager__item--previous,
+    .pager__item--ellipsis, .pager__item--last,
+    .pager__item--next {
+      // nothing atm.
+    }
+  }
+
+}
+
+.sidebar {
+  .site-name {
+    a {
+      &:hover, &:active, &:link, &:visited {
+        color: #000000;
+        text-decoration: none;
+        font-size: 2em;
+        line-height: 1.3em;
+      }
+    }
+  }
+}
+
+.main-menu {
+  ul {
+    margin: 3em 0 0 1.5em;
+    li {
+      list-style-image: url(../images/sl1.gif);
+      margin: 0 0 0.7em 0;
+      text-transform: lowercase;
+      &:hover {
+        list-style-image: url(../images/sl2.gif);
+
+      }
+    }
+  }
+}
+
+.content {
+  @include span-columns(10);
+  @include media($desktop) {
+    @include span-columns(8);
+  }
+  @include media($tablet) {
+    @include span-columns(5);
+  }
+  @include media($mobile) {
+    @include span-columns(4 of 4);
+  }
+}
+
+.sidebar {
+  @include span-columns(6);
+  @include media($desktop) {
+    @include span-columns(4);
+  }
+  @include media($tablet) {
+    @include span-columns(3);
+  }
+  @include media($mobile) {
+    @include span-columns(4 of 4);
+  }
+}
+
+.grid-debug {
+  background: lightskyblue;
+  @include media($desktop) {
+    background: lightpink;
+  }
+  @include media($tablet) {
+    background: lightgreen;
+  }
+  @include media($mobile) {
+    background: lightyellow;
+  }
+}

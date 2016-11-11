@@ -1,0 +1,8 @@
+{% extends "block.html.twig" %}
+{% block content %}
+  {% if site_name %}
+    <div class="site-name">
+      <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
+    </div>
+  {% endif %}
+{% endblock %}

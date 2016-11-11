@@ -1,0 +1,13 @@
+<div class="container">
+  <main role="main">
+  <a id="main-content" tabindex="-1"></a>
+  {% if page.sidebar %}
+    <aside class="sidebar" role="complementary">
+      {{ page.sidebar }}
+    </aside>
+  {% endif %}
+  <div class="content">
+    {{ page.content }}
+  </div>
+  </main>
+</div>
