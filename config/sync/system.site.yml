@@ -1,0 +1,14 @@
+uuid: 588b33d8-91ba-441f-b9a7-b76447a5b056
+name: 'Cristina Silván'
+mail: bdoesborg@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /homepage
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

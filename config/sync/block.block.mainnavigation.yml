@@ -1,0 +1,24 @@
+uuid: 2806d005-8bd6-4a50-a04b-80f6098a4eaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - linkup
+id: mainnavigation
+theme: linkup
+region: sidebar
+weight: -3
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

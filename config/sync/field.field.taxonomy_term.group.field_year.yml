@@ -1,0 +1,19 @@
+uuid: bb02b392-0d4d-49db-a820-7af66cd4c28f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_year
+    - taxonomy.vocabulary.group
+id: taxonomy_term.group.field_year
+field_name: field_year
+entity_type: taxonomy_term
+bundle: group
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

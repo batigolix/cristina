@@ -1,0 +1,20 @@
+uuid: 7330792f-1dbf-4d23-9ae3-5b56e47c8fe3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - linkup
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: linkup_local_actions
+theme: linkup
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

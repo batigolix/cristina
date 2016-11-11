@@ -1,0 +1,23 @@
+uuid: a252ccbd-6732-4c17-ac6e-b110067a518b
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: works_group_pattern
+label: 'Works group pattern'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'works/[term:name]'
+selection_criteria:
+  cd29097c-8e3c-4b6d-87e8-c1f4e8cd8209:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      group: group
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: cd29097c-8e3c-4b6d-87e8-c1f4e8cd8209
+selection_logic: and
+weight: -5
+relationships: {  }

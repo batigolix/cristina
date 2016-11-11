@@ -1,0 +1,17 @@
+uuid: 0679b06c-ddcb-4736-abbb-a65e71c8e48e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Work
+type: work
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

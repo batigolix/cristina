@@ -1,0 +1,9 @@
+uuid: f011302a-e3fa-4220-b825-032081dc9014
+langcode: en
+status: true
+dependencies: {  }
+name: Group
+vid: group
+description: ''
+hierarchy: 0
+weight: 0

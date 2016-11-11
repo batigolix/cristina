@@ -1,0 +1,22 @@
+uuid: 77270c2e-9518-41ac-9196-ad12fc1c3427
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - linkup
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: linkup_messages
+theme: linkup
+region: content
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

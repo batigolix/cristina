@@ -1,0 +1,10 @@
+uuid: dba74171-4958-417e-af5c-a05eaf23d9d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+id: block.token
+label: Token
+targetEntityType: block
+cache: true

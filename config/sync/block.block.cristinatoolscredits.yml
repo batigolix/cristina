@@ -1,0 +1,40 @@
+uuid: 77c4eeff-4e64-4d3f-8297-2c55ec23dc08
+langcode: en
+status: true
+dependencies:
+  module:
+    - cri_tools
+  theme:
+    - linkup
+id: cristinatoolscredits
+theme: linkup
+region: content
+weight: 1
+provider: null
+plugin: cri_tools_credits
+settings:
+  id: cri_tools_credits
+  label: Credits
+  provider: cri_tools
+  label_display: '0'
+  credits_markup_string: 'All work (c) 2010 Cristina Silván. All rights reserved.'
+  cache:
+    max_age: 3600
+    contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: 7c74a8a6-a536-4d52-a307-9f9c73c6d666
+langcode: en
+status: true
+dependencies: {  }
+name: jumbo
+label: 'Jumbo (960x960)'
+effects:
+  e9d78d4a-0776-448c-9c87-7541b04dd584:
+    uuid: e9d78d4a-0776-448c-9c87-7541b04dd584
+    id: image_scale
+    weight: 1
+    data:
+      width: 960
+      height: 960
+      upscale: false

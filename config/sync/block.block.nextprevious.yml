@@ -1,0 +1,28 @@
+uuid: 8ba77446-a552-4b63-845e-ddbf9d0d491e
+langcode: en
+status: true
+dependencies:
+  module:
+    - cri_tools
+    - node
+  theme:
+    - linkup
+id: nextprevious
+theme: linkup
+region: content
+weight: 0
+provider: null
+plugin: next_previous
+settings:
+  id: next_previous
+  label: 'Next Previous'
+  provider: cri_tools
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      work: work
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
