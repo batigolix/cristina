@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies: {  }
+id: works
+migration_tags: null
+migration_group: Crimi
+label: Works
+source:
+  plugin: json_source
+  path: 'http://cristina.val/works.json'
+  headers:
+    Accept: application/json
+  identifier: nid
+  identifierDepth: 2
+  fields:
+    - nid
+    - title
+    - body
+    - created
+    - updated
+process:
+  type:
+    plugin: default_value
+    default_value: work
+  title: title
+  body/format: basic_html
+  body/value: body
+  field_image:
+    source: image
+    plugin: file_import
+  sticky:
+    plugin: default_value
+    default_value: 0
+  created: created
+  updated: updated
+  uid:
+    plugin: default_value
+    default_value: 1
+  field_group:
+    plugin: migration
+    migration: galleries
+    source: tid
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - galleries

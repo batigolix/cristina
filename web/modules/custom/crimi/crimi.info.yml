@@ -1,0 +1,14 @@
+name: Cristina Silvan migration
+type: module
+description: Migration for the D6 Cristina Silvan website
+core: 8.x
+package: Custom
+dependencies:
+  - migrate_plus
+  - migrate_tools
+  - migrate_source_json
+config_devel:
+  install:
+    - migrate_plus.migration.galleries
+    - migrate_plus.migration.works
+    - migrate_plus.migration.articles

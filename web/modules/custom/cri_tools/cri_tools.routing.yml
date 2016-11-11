@@ -1,0 +1,7 @@
+cri_tools.homepage_hello:
+  path: '/homepage'
+  defaults:
+    _controller: '\Drupal\cri_tools\Controller\Homepage::content'
+    _title: NULL
+  requirements:
+    _permission: 'access content'
