@@ -19,20 +19,23 @@ source:
     - body
     - created
     - updated
-    - body2
+    - image
 process:
   type:
     plugin: default_value
     default_value: article
   title: title
-  body/format: basic_html
+  body/format:
+    plugin: default_value
+    default_value: advanced_html
   body/value: body
-  field_image:
-    source: body2
-    plugin: file_import_from_body
+  body/summary: summary
   sticky:
     plugin: default_value
     default_value: 0
+  field_image:
+    source: image
+    plugin: file_import
   created: created
   updated: updated
   uid:

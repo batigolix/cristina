@@ -27,6 +27,10 @@ process:
     default_value: group
   name: name
   weight: weight
+  field_image:
+    source: image
+    plugin: file_import
+  field_year: year
 destination:
   plugin: 'entity:taxonomy_term'
 migration_dependencies: {  }
