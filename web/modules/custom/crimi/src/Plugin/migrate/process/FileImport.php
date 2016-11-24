@@ -8,6 +8,8 @@
 namespace Drupal\crimi\Plugin\migrate\process;
 
 use Drupal\migrate\MigrateExecutableInterface;
+//use Drupal\migrate\MigrateSkipProcessException;
+use Drupal\migrate\MigrateSkipProcessException;
 use Drupal\migrate\ProcessPluginBase;
 use Drupal\migrate\Row;
 
@@ -24,51 +26,32 @@ class FileImport extends ProcessPluginBase {
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
-//    $source = drupal_get_path('module', 'comics_migration') . '/migration_assets/images/' . $value;
+    dd($value);
+//    \Drupal::logger('crimi')->notice(serialize($value));
 
-//    $source = str_replace('http://cristina.val/','http://cristinasilvan.com/',$source);
-//
-//
-//    //http://cristinasilvan.com/sites/cristinasilvan.com/files/images/LINK-UP.2.preview.jpg
-//
-//    if (!$uri = file_unmanaged_copy($source)) {
-//      return [];
-//    }
-//
-//    $file = \Drupal::entityTypeManager()->getStorage('file')->create(['uri' => $uri]);
-//    $file->save();
-
-    \Drupal::logger('crimi')->notice(serialize($value));
-
-
+    // Fails if there is no URL.
     if (empty($value)) {
-      // Skip this item if there's no URL.
-      throw new MigrateSkipProcessException();
+      throw new MigrateSkipProcessException;
+    }
+    // Save the file, return its ID.
+    $file = system_retrieve_file($value, 'public://', TRUE, FILE_EXISTS_REPLACE);
+
+    // Attempts to find file by replacing the URL.
+    if ($file == FALSE) {
+      $source = str_replace('sites/cristina.val/files/', '', $value);
+      $source = str_replace('test2.doesb.org', 'cristina.val', $source);
+      if (substr($source, 0, 4) != "http") {
+        $source = 'http://cristina.val' . $source;
+      }
+      $file = system_retrieve_file($value, 'public://', TRUE, FILE_EXISTS_REPLACE);
     }
 
-    $source = str_replace('sites/cristina.val/files/','',$value);
+    // Fails if no file is found.
+    if ($file == FALSE) {
+      throw new MigrateSkipProcessException;
+    }
 
-    // Save the file, return its ID.
-    $file = system_retrieve_file($source, 'public://', TRUE, FILE_EXISTS_REPLACE);
-
-//
-    $ddumper = \Drupal::service('devel.dumper');
-    $ddumper->debug($file);
-
-    dd('afasasdasas');
-
-
-//    drupal_debug($file);
-//debug($file);
-//
-//    DevelDumperManagerInterface::debug($file);
-
-//    \Drupal::logger('crimi')->notice($file->id());
-//    \Drupal::logger('crimi')->notice(serialize($file));
-
-
+    // Returns the file ID if found.
     return $file->id();
   }
-
-
 }

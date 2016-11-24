@@ -23,7 +23,9 @@ process:
     plugin: default_value
     default_value: work
   title: title
-  body/format: basic_html
+  body/format:
+    plugin: default_value
+    default_value: basic_html
   body/value: body
   field_image:
     source: image

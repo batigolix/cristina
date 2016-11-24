@@ -195,55 +195,64 @@ a:active {
   color: #000; }
 
 main {
-  max-width: 1000px;
+  max-width: 960px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 6em; }
   main::after {
     clear: both;
     content: "";
     display: table; }
   main h1 {
-    font-size: 2em; }
-  main h2 {
     font-size: 1.6em; }
-  main h3 {
+  main h2 {
     font-size: 1.4em; }
+  main h3 {
+    font-size: 1.2em; }
   main h1, main h2, main h3, main h4, main h5, main h6 {
     font-family: Verdana, sans-serif;
     font-weight: normal;
     font-weight: normal;
-    line-height: 1.3em;
-    color: #333; }
+    color: #333;
+    line-height: 1.3em; }
     main h1 a, main h2 a, main h3 a, main h4 a, main h5 a, main h6 a {
       text-decoration: none; }
-  main .action-tabs {
-    margin: 0 0 1.5em 0; }
-    main .action-tabs li {
-      list-style: none;
-      display: inline; }
-      main .action-tabs li a {
-        background: darkgreen;
-        color: white;
-        padding: 0.4em 0.8em 0.4em 0.8em;
-        font-size: 1.1em;
-        border: 2px solid #000;
-        text-decoration: none; }
   main .work-groups, main .works, main .news {
     font-size: 0.9em; }
-    main .work-groups ul li.work h2, main .work-groups ul li.news-item h2, main .works ul li.work h2, main .works ul li.news-item h2, main .news ul li.work h2, main .news ul li.news-item h2 {
+    main .work-groups ul li.work, main .works ul li.work, main .news ul li.work {
+      float: left;
+      height: 130px;
+      width: 200px;
+      overflow: hidden; }
+      main .work-groups ul li.work h2, main .works ul li.work h2, main .news ul li.work h2 {
+        font-size: 0.9em;
+        font-weight: normal; }
+    main .work-groups ul li.work-group h2, main .works ul li.work-group h2, main .news ul li.work-group h2 {
       font-size: 0.9em;
       font-weight: bold; }
-    main .work-groups ul li.work article, main .works ul li.work article, main .news ul li.work article {
+    main .work-groups ul li.work-group article, main .works ul li.work-group article, main .news ul li.work-group article {
       float: left;
       width: 100%;
       border-bottom: 2px solid #adadb0;
-      padding: 1em 0 1em 0; }
-    main .work-groups ul li.work .col1, main .works ul li.work .col1, main .news ul li.work .col1 {
+      padding: 0 0 1em 0;
+      margin: 0 0 1em 0; }
+    main .work-groups ul li.work-group .col1, main .works ul li.work-group .col1, main .news ul li.work-group .col1 {
+      float: left; }
+    main .work-groups ul li.work-group .col2, main .works ul li.work-group .col2, main .news ul li.work-group .col2 {
       float: left;
-      width: 20%; }
-    main .work-groups ul li.work .col2, main .works ul li.work .col2, main .news ul li.work .col2 {
-      float: left;
-      width: 80%; }
+      margin-left: 2em; }
+    main .work-groups ul li.news-item, main .works ul li.news-item, main .news ul li.news-item {
+      border-bottom: 2px #CCC solid;
+      padding-bottom: 2em;
+      margin-bottom: 2em; }
+      main .work-groups ul li.news-item h2, main .works ul li.news-item h2, main .news ul li.news-item h2 {
+        font-size: 0.9em;
+        font-weight: bold; }
+      main .work-groups ul li.news-item .links, main .works ul li.news-item .links, main .news ul li.news-item .links {
+        font-size: 90%;
+        margin-top: 1em; }
+      main .work-groups ul li.news-item .field--name-field-image, main .works ul li.news-item .field--name-field-image, main .news ul li.news-item .field--name-field-image {
+        margin-top: 1em; }
   main .prev-next-nav {
     margin: 1em 0 1em 0;
     min-height: 2em; }
@@ -254,7 +263,8 @@ main {
     main .prev-next-nav .next {
       float: right; }
   main .credits {
-    clear: both; }
+    clear: both;
+    margin-top: 10em; }
   main .pager .pager__items {
     margin: 1em 0 1em 0;
     min-height: 2em; }
@@ -270,12 +280,16 @@ main {
         background: #2AE6FE; }
         main .pager .pager__items .pager__item:hover a {
           color: #FFF; }
+  main .block-system-main-block {
+    margin-top: 3em; }
 
-.sidebar .site-name a:hover, .sidebar .site-name a:active, .sidebar .site-name a:link, .sidebar .site-name a:visited {
-  color: #000000;
-  text-decoration: none;
-  font-size: 2em;
-  line-height: 1.3em; }
+.sidebar .site-name {
+  font-size: 1.7em;
+  line-height: 1.3em;
+  margin: 0 0 0.75em; }
+  .sidebar .site-name a:hover, .sidebar .site-name a:active, .sidebar .site-name a:link, .sidebar .site-name a:visited {
+    color: #000000;
+    text-decoration: none; }
 
 .main-menu ul {
   margin: 3em 0 0 1.5em; }
@@ -289,18 +303,10 @@ main {
 .content {
   float: left;
   display: block;
-  margin-right: 1.5873%;
-  width: 61.90476%; }
+  margin-right: 2.12766%;
+  width: 65.95745%; }
   .content:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 960px) {
-    .content {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 65.95745%; }
-      .content:last-child {
-        margin-right: 0; } }
   @media screen and (max-width: 720px) {
     .content {
       float: left;
@@ -321,18 +327,10 @@ main {
 .sidebar {
   float: left;
   display: block;
-  margin-right: 1.5873%;
-  width: 36.50794%; }
+  margin-right: 2.12766%;
+  width: 31.91489%; }
   .sidebar:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 960px) {
-    .sidebar {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 31.91489%; }
-      .sidebar:last-child {
-        margin-right: 0; } }
   @media screen and (max-width: 720px) {
     .sidebar {
       float: left;
@@ -352,14 +350,18 @@ main {
 
 .grid-debug {
   background: lightskyblue; }
-  @media screen and (max-width: 960px) {
-    .grid-debug {
-      background: lightpink; } }
   @media screen and (max-width: 720px) {
     .grid-debug {
       background: lightgreen; } }
   @media screen and (max-width: 420px) {
     .grid-debug {
       background: lightyellow; } }
+
+button {
+  margin: 0 0 1em 0; }
+  button a {
+    color: #FFF; }
+    button a:link, button a:visited, button a:active, button a:hover {
+      color: #FFF; }
 
 /*# sourceMappingURL=screen.css.map */

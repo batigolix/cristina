@@ -23,38 +23,22 @@ a {
 
 main {
   @include outer-container;
+  margin-top: 6em;
   h1 {
-    font-size: 2em;
-  }
-  h2 {
     font-size: 1.6em;
   }
-  h3 {
+  h2 {
     font-size: 1.4em;
+  }
+  h3 {
+    font-size: 1.2em;
   }
   h1, h2, h3, h4, h5, h6 {
     @include header-font;
-    line-height: 1.3em;
     color: $dark_grey;
+    line-height: 1.3em;
     a {
       text-decoration: none;
-    }
-  }
-
-  // action-tabs is entity view, edit, delete, etc.
-  .action-tabs {
-    margin: 0 0 1.5em 0;
-    li {
-      a {
-        background: darkgreen;
-        color: white;
-        padding: 0.4em 0.8em 0.4em 0.8em;
-        font-size: 1.1em;
-        border: 2px solid #000;
-        text-decoration: none;
-      }
-      list-style: none;
-      display: inline;
     }
   }
 
@@ -62,26 +46,53 @@ main {
   .work-groups, .works, .news {
     font-size: 0.9em;
     ul {
-      li.work, li.news-item {
+      li.work {
+        h2 {
+          font-size: 0.9em;
+          font-weight: normal;
+        }
+        float: left;
+        height: 130px;
+        width: 200px;
+        overflow: hidden;
+      }
+      li.work-group {
         h2 {
           font-size: 0.9em;
           font-weight: bold;
         }
-      }
-      li.work {
         article {
           float:left;
           width:100%;
           border-bottom: 2px solid $light_grey;
-          padding: 1em 0 1em 0;
+          padding: 0 0 1em 0;
+          margin: 0 0 1em 0;
         }
         .col1 {
           float:left;
-          width: 20%;
+//          width: 20%;
         }
         .col2 {
           float:left;
-          width: 80%;
+//          width: 80%;
+          margin-left: 2em;
+        }
+      }
+      li.news-item {
+        border-bottom: 2px #CCC solid;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+        h2 {
+          font-size: 0.9em;
+          font-weight: bold;
+        }
+        .links {
+          font-size: 90%;
+          margin-top: 1em;
+        }
+        .field--name-field-image {
+          margin-top: 1em;
+
         }
       }
     }
@@ -105,6 +116,7 @@ main {
 
   .credits {
     clear: both;
+    margin-top: 10em;
   }
 
   //pagination
@@ -135,16 +147,21 @@ main {
     }
   }
 
+  .block-system-main-block {
+    margin-top: 3em;
+  }
+
 }
 
 .sidebar {
   .site-name {
+    font-size: 1.7em;
+    line-height: 1.3em;
+    margin: 0 0 0.75em;
     a {
       &:hover, &:active, &:link, &:visited {
         color: #000000;
         text-decoration: none;
-        font-size: 2em;
-        line-height: 1.3em;
       }
     }
   }
@@ -166,10 +183,7 @@ main {
 }
 
 .content {
-  @include span-columns(10);
-  @include media($desktop) {
-    @include span-columns(8);
-  }
+  @include span-columns(8);
   @include media($tablet) {
     @include span-columns(5);
   }
@@ -179,10 +193,7 @@ main {
 }
 
 .sidebar {
-  @include span-columns(6);
-  @include media($desktop) {
-    @include span-columns(4);
-  }
+  @include span-columns(4);
   @include media($tablet) {
     @include span-columns(3);
   }
@@ -193,13 +204,25 @@ main {
 
 .grid-debug {
   background: lightskyblue;
-  @include media($desktop) {
-    background: lightpink;
-  }
+//  @include media($desktop) {
+//    background: lightpink;
+//  }
   @include media($tablet) {
     background: lightgreen;
   }
   @include media($mobile) {
     background: lightyellow;
+  }
+}
+
+button {
+  // @todo do button.
+  //  @include button(shiny, #ff0000);
+  margin: 0 0 1em 0;
+  a {
+    color: #FFF;
+    &:link, &:visited, &:active, &:hover {
+      color: #FFF;
+    }
   }
 }

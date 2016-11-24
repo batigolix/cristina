@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Theme override to display a taxonomy term.
+ *
+ * Workaround for not recognizing the bundle specific taxo term template
+ */
+#}
+
+{% if view_mode == 'teaser' %}
+  {% if term.bundle == 'group' %}
+    {% set title = name %}
+    <article>
+      <div class="col1">
+        {{ content.field_image }}
+      </div>
+      <div class="col2">
+        {{ title_prefix }}
+        <h2><a href="{{ url }}">{{ title }}</a></h2>
+        {{ title_suffix }}
+        {{ content|without('field_image') }}
+      </div>
+    </article>
+  {% endif %}
+{% else %}
+  <div{{ attributes }}>
+    {{ title_prefix }}
+    {% if not page %}
+      <h2><a href="{{ url }}">{{ name }}</a></h2>
+    {% endif %}
+    {{ title_suffix }}
+    {{ content }}
+  </div>
+{% endif %}
