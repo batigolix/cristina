@@ -7,7 +7,9 @@
 
 namespace Drupal\Tests\migrate_source_json\Unit\Plugin\migrate;
 
+use Drupal\migrate_source_json\Plugin\migrate\JSONClientInterface;
 use Drupal\migrate_source_json\Plugin\migrate\JSONReader;
+use Drupal\migrate_source_json\Plugin\migrate\JSONReaderInterface;
 use Drupal\Tests\migrate_source_json\Unit\JSONUnitTestCase;
 
 /**
@@ -41,7 +43,7 @@ class JSONReaderTest extends JSONUnitTestCase {
    * @covers ::__construct
    */
   public function create() {
-    $this->assertInstanceOf('Drupal\migrate_source_json\Plugin\migrate\JSONReaderInterface', $this->reader);
+    $this->assertInstanceOf(JSONReaderInterface::class, $this->reader);
   }
 
   /**
@@ -79,7 +81,7 @@ class JSONReaderTest extends JSONUnitTestCase {
   public function setClient() {
     $this->reader->setClient();
     $client = $this->reader->getClient();
-    $this->assertInstanceOf('Drupal\migrate_source_json\Plugin\migrate\JSONClientInterface', $client);
+    $this->assertInstanceOf(JSONClientInterface::class, $client);
   }
 
   /**

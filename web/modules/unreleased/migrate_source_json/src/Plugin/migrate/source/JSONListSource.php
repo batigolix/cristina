@@ -10,9 +10,8 @@
 
 namespace Drupal\migrate_source_json\Plugin\migrate\source;
 
-use Drupal\migrate\Annotation\MigrateSource;
-use Drupal\migrate\Entity\MigrationInterface;
 use Drupal\migrate\MigrateException;
+use Drupal\migrate\Plugin\MigrationInterface;
 
 /**
  * Source for JSON data that contains a list of ids that require a second request.

@@ -35,7 +35,7 @@ class JSONMultiSourceTest extends JSONUnitTestCase {
    * @covers ::__construct
    */
   public function create() {
-    $this->assertInstanceOf('\Drupal\migrate_source_json\Plugin\migrate\source\JSONMultiSource', $this->source);
+    $this->assertInstanceOf(JSONMultiSource::class, $this->source);
   }
 
   /**
@@ -100,35 +100,6 @@ class JSONMultiSourceTest extends JSONUnitTestCase {
    */
   public function get() {
     $this->assertEquals('id', $this->source->get('identifier'));
-  }
-
-  /**
-   * Tests initialization of the iterator.
-   *
-   * @test
-   *
-   * @covers ::initializeIterator
-   */
-  public function initializeIterator() {
-//    $configuration = $this->configuration;
-//    $configuration['path'] = 'top.json';
-//    $configuration['identifierDepth'] = 0;
-//    $source = new JSONMultiSource($configuration, $this->pluginId, $this->pluginDefinition, $this->plugin);
-//    $iterator = $this->invokeMethod($source, 'initializeIterator');
-//    $this->assertInstanceOf('Iterator', $iterator);
-//    $iterator->rewind();
-//    $item = $iterator->current();
-//    $this->assertEquals($item['id'], 1);
-//
-//    $configuration = $this->configuration;
-//    $configuration['path'] = 'nested.json';
-//    $configuration['identifierDepth'] = 1;
-//    $source = new JSONMultiSource($configuration, $this->pluginId, $this->pluginDefinition, $this->plugin);
-//    $iterator = $this->invokeMethod($source, 'initializeIterator');
-//    $iterator->rewind();
-//    $item = $iterator->current();
-//    $this->assertEquals($item['id'], 1);
-//
   }
 
 }

@@ -8,7 +8,7 @@
     <ini name="memory_limit" value="-1"/>
   </php>
   <testsuites>
-    <testsuite name="Migrate CSV Test Suite">
+    <testsuite name="Migrate JSON Test Suite">
       <directory>./tests/src/Unit</directory>
     </testsuite>
   </testsuites>

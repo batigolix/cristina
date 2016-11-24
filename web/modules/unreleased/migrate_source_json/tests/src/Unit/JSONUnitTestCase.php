@@ -6,7 +6,10 @@
 
 namespace Drupal\Tests\migrate_source_json\Unit;
 
+use Drupal\migrate\Plugin\Migration;
+use Drupal\migrate_source_json\Plugin\migrate\JSONReader;
 use Drupal\Tests\UnitTestCase;
+use Prophecy\Argument;
 
 /**
  * Base unit test to build json file contents.
@@ -39,7 +42,9 @@ abstract class JSONUnitTestCase extends UnitTestCase {
   /**
    * The mock migration plugin.
    *
-   * @var \Drupal\migrate\Entity\MigrationInterface
+   * @topo Swap it out for a mock instance after https://www.drupal.org/node/2694009
+   *
+   * @var \Drupal\migrate\Plugin\Migration
    */
   protected $plugin;
 
@@ -55,7 +60,14 @@ abstract class JSONUnitTestCase extends UnitTestCase {
 
     $this->pluginId = 'test json migration';
     $this->pluginDefinition = array();
-    $this->plugin = $this->getMock('\Drupal\migrate\Entity\MigrationInterface');
+    $plugin = $this->prophesize(Migration::class);
+    $plugin->getIdMap()
+      ->willReturn(NULL);
+    // @topo Swap it out for getHighWaterProperty after https://www.drupal.org/node/2694009
+    $plugin->get(Argument::exact('highWaterProperty'))
+      ->willReturn(NULL);
+
+    $this->plugin = $plugin->reveal();
 
     $this->configuration = array(
       'path' => 'nested.json',
@@ -63,8 +75,8 @@ abstract class JSONUnitTestCase extends UnitTestCase {
       'identifierDepth' => 1,
       'fields' => array('id', 'user_name', 'description'),
       'headers' => array(array('Accept' => 'application/json')),
-      'clientClass' => 'Drupal\Tests\migrate_source_json\Unit\JSONTestCaseClient',
-      'readerClass' => 'Drupal\migrate_source_json\Plugin\migrate\JSONReader',
+      'clientClass' => JSONTestCaseClient::class,
+      'readerClass' => JSONReader::class,
     );
 
   }

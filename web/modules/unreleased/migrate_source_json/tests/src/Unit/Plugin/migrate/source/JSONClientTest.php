@@ -7,7 +7,7 @@
 
 namespace Drupal\Tests\migrate_source_json\Unit\Plugin\migrate\source;
 
-use Drupal\migrate_source_json\Plugin\migrate\source\JSONSource;
+use Drupal\migrate_source_json\Plugin\migrate\JSONClientInterface;
 use Drupal\Tests\migrate_source_json\Unit\JSONUnitTestCase;
 
 /**
@@ -43,7 +43,7 @@ class JSONClientTest extends JSONUnitTestCase {
    * @covers ::__construct
    */
   public function create() {
-    $this->assertInstanceOf('Drupal\migrate_source_json\Plugin\migrate\JSONClientInterface', $this->client);
+    $this->assertInstanceOf(JSONClientInterface::class, $this->client);
   }
 
   /**

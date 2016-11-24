@@ -35,7 +35,7 @@ class JSONSourceTest extends JSONUnitTestCase {
    * @covers ::__construct
    */
   public function create() {
-    $this->assertInstanceOf('\Drupal\migrate_source_json\Plugin\migrate\source\JSONSource', $this->source);
+    $this->assertInstanceOf(JSONSource::class, $this->source);
   }
 
   /**

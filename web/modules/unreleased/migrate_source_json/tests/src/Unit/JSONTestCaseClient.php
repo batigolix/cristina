@@ -11,6 +11,7 @@ namespace Drupal\Tests\migrate_source_json\Unit;
 use Drupal\migrate_source_json\Plugin\migrate\JSONClient;
 use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Object to retrieve and iterate over JSON data.
@@ -41,7 +42,7 @@ class JSONTestCaseClient extends JSONClient {
       default:
         $body = $content[$url];
     }
-    $response = new \GuzzleHttp\Psr7\Response($status, $headers, $body);
+    $response = new Response($status, $headers, $body);
     return $response;
   }
 
