@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.field_image
-    - image.style.thumbnail
+    - image.style.jumbo
     - node.type.article
   module:
     - cri_tools
@@ -29,7 +29,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: jumbo
       image_link: content
     third_party_settings: {  }
   links:
