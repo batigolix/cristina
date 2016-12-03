@@ -1,0 +1,38 @@
+uuid: 818bb9a9-5092-4d0e-9c89-2571185e794c
+langcode: en
+status: true
+dependencies:
+  module:
+    - cri_tools
+    - system
+  theme:
+    - linkup
+id: cristinatoolsintroductioninspanish
+theme: linkup
+region: diptych_plate1
+weight: -7
+provider: null
+plugin: cri_tools_intro_spanish
+settings:
+  id: cri_tools_intro_spanish
+  label: 'Introduction in spanish'
+  provider: cri_tools
+  label_display: '0'
+  intro_spanish_markup_string: 'El parque de atracciones es ese espacio especular en el que las fronteras entre lo real y lo virtual se diluyen. Y es que esa arquitectura de luz que centellea prendida en la oscuridad de la noche, tiene algo de espectral. Incluso de inverosímil, en el difícil equilibrio de fuerzas antigravitatorias que la sostiene.<br /><br /><br />LOS PRODIGIOS DE LA VISIÓN<br />Rosa Gutiérrez Herranz</p>'
+  cache:
+    max_age: 3600
+    contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -56,3 +56,4 @@ permissions:
   - 'access site reports'
   - 'use text format advanced_html'
   - 'use text format restricted_html'
+  - 'administer blocks'
