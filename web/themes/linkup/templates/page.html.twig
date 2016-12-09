@@ -1,13 +1,23 @@
 <div class="container">
   <main role="main">
-  <a id="main-content" tabindex="-1"></a>
-  {% if page.sidebar %}
-    <aside class="sidebar" role="complementary">
-      {{ page.sidebar }}
-    </aside>
-  {% endif %}
-  <div class="content">
-    {{ page.content }}
-  </div>
+    <a id="main-content" tabindex="-1"></a>
+    {% if page.sidebar %}
+      <aside class="sidebar" role="complementary">
+        {{ page.sidebar }}
+      </aside>
+    {% endif %}
+    <div class="content">
+      {{ page.content }}
+    </div>
+    {% if page.diptych_plate1 or page.diptych_plate2 %}
+      <div class="diptych">
+        <div class="diptych-plate1">
+          {{ page.diptych_plate1 }}
+        </div>
+        <div class="diptych-plate2">
+          {{ page.diptych_plate2 }}
+        </div>
+      </div>
+    {% endif %}
   </main>
 </div>

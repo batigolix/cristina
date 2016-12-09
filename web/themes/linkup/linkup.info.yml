@@ -12,19 +12,8 @@ stylesheets-remove:
 regions:
   content: Content
   sidebar: Sidebar
-
-#  help: 'Help'
-#  highlighted: 'Highlighted'
-#  content: 'Content'
-#  content_top: 'Content top'
-#  sidebar_first: 'First sidebar'
-#  sidebar_second: 'Second sidebar'
-#  footer: 'Footer'
-#  page_top: 'Page top'
-#  header1: 'Header Right 1st Col'
-#  header2: 'Header Right 2nd Col'
-#  content_top: 'Content top'
-#  sidebar: 'Sidebar'
+  diptych_plate1: Diptych plate 1
+  diptych_plate2: Diptych plate 2
 
 #;;features[] = logo
 #;features[] = name
@@ -36,6 +25,4 @@ regions:
 #features[] = main_menu
 #features[] = secondary_menu
 
-
 #scripts[] = js/scripts.js
-
