@@ -7,3 +7,5 @@
 - error messages
 - disable dev modules
 - disable experimental
+- block account creation
+- env indicator
