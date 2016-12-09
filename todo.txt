@@ -11,3 +11,5 @@
 - env indicator
 - config readonly
 - migrate img alt txt
+- aggregate
+- caching

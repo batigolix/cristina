@@ -57,3 +57,4 @@ permissions:
   - 'use text format advanced_html'
   - 'use text format restricted_html'
   - 'administer blocks'
+  - 'administer menu'

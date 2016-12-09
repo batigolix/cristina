@@ -217,27 +217,8 @@ main {
   }
 }
 
-//.diptych {
-//  @include span-columns(8);
-//  @include media($tablet) {
-//    @include span-columns(5);
-//  }
-//  @include media($mobile) {
-//    @include span-columns(4 of 4);
-//  }
-//}
-
-//, . {
-//  @include span-columns(5);
-//
-//
-//
-//
-//}
-//
-
+// quick n dirty block layout for the homepage
 .diptych {
-
   max-width: 600px;
   margin-top: 20px;
   .diptych-plate1 {
