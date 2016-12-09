@@ -2,3 +2,8 @@
 
 - aliases
 - transliterate migrated images
+- mail
+- img homepage
+- error messages
+- disable dev modules
+- disable experimental
