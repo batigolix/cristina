@@ -1,0 +1,26 @@
+uuid: decd6dc8-6433-4f72-9c2b-e54d9f87284c
+langcode: en
+status: true
+dependencies:
+  module:
+    - cri_tools
+    - system
+  theme:
+    - linkup
+id: cristinatoolsintroductionvisual
+theme: linkup
+region: content
+weight: -3
+provider: null
+plugin: cri_tools_intro_visual
+settings:
+  id: cri_tools_intro_visual
+  label: 'Cristina tools: introduction visual'
+  provider: cri_tools
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
