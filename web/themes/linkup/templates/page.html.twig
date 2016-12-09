@@ -1,5 +1,12 @@
+
+{%
+set classes = [
+is_front ? 'homepage',
+]
+%}
+
 <div class="container">
-  <main role="main">
+  <main role="main"{{ attributes.addClass(classes) }}>
     <a id="main-content" tabindex="-1"></a>
     {% if page.sidebar %}
       <aside class="sidebar" role="complementary">

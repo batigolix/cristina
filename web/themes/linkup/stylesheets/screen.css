@@ -291,6 +291,9 @@ main {
   main .block-system-main-block {
     margin-top: 3em; }
 
+main.homepage .block-system-main-block {
+  margin-top: 0; }
+
 .sidebar .site-name {
   font-size: 1.7em;
   line-height: 1.3em;
