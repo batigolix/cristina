@@ -16,7 +16,7 @@ class Homepage extends ControllerBase {
     // Returning an empty page. Homepage content will be provided by blocks.
     return array(
       '#type' => 'markup',
-      '#markup' => '',
+      '#markup' => 'asjflajslkajslkjasdklj',
     );
   }
 

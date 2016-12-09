@@ -6,24 +6,24 @@ use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Provides a 'CriToolsCredits' block.
+ * Provides a 'CriToolsIntroSpanish' block.
  *
  * @Block(
- *  id = "cri_tools_credits",
- *  admin_label = @Translation("Cristina tools: credits"),
+ *  id = "cri_tools_intro_spanish",
+ *  admin_label = @Translation("Cristina tools: introduction in spanish"),
  * )
  */
-class CriToolsCredits extends BlockBase {
+class CriToolsIntroSpanish extends BlockBase {
 
-  protected $default_markup = 'All work (c) 2010 - 2016 Cristina Silván. All rights reserved.';
+  protected $default_markup = 'El parque de atracciones es ese espacio especular en el que las fronteras entre lo real y lo virtual se diluyen. Y es que esa arquitectura de luz que centellea prendida en la oscuridad de la noche, tiene algo de espectral. Incluso de inverosímil, en el difícil equilibrio de fuerzas antigravitatorias que la sostiene.<br /><br /><br />LOS PRODIGIOS DE LA VISIÓN<br />Rosa Gutiérrez Herranz';
 
   /**
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
     return array(
-      'label' => t("Credits"),
-      'credits_markup_string' => $this->default_markup,
+      'label' => t("Introduction in spanish"),
+      'intro_spanish_markup_string' => $this->default_markup,
       'cache' => array(
         'max_age' => 3600,
         'contexts' => array(
@@ -37,11 +37,11 @@ class CriToolsCredits extends BlockBase {
    * {@inheritdoc}
    */
   public function blockForm($form, FormStateInterface $form_state) {
-    $form['credits_markup_string_text'] = array(
+    $form['intro_spanish_markup_string_text'] = array(
       '#type' => 'textarea',
-      '#title' => $this->t('Credits markup'),
-      '#description' => $this->t('This text will appear in the example block.'),
-      '#default_value' => $this->configuration['credits_markup_string'],
+      '#title' => $this->t('Introduction in spanish markup'),
+      '#description' => $this->t('This text will appear in the introduction in spanish block.'),
+      '#default_value' => $this->configuration['intro_spanish_markup_string'],
     );
     return $form;
   }
@@ -50,8 +50,8 @@ class CriToolsCredits extends BlockBase {
    * {@inheritdoc}
    */
   public function blockSubmit($form, FormStateInterface $form_state) {
-    $this->configuration['credits_markup_string']
-      = $form_state->getValue('credits_markup_string_text');
+    $this->configuration['intro_spanish_markup_string']
+      = $form_state->getValue('intro_spanish_markup_string_text');
   }
 
   /**
@@ -60,7 +60,7 @@ class CriToolsCredits extends BlockBase {
   public function build() {
     return array(
       '#type' => 'markup',
-      '#markup' => $this->configuration['credits_markup_string'],
+      '#markup' => $this->configuration['intro_spanish_markup_string'],
     );
   }
 
