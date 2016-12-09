@@ -9,7 +9,7 @@ _core:
 id: linkup_local_tasks
 theme: linkup
 region: content
-weight: -2
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:

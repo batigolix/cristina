@@ -8,16 +8,24 @@
     {% endif %}
     <div class="content">
       {{ page.content }}
+
+      {# on the homepage we want a quick and dirty layout of 2 sidebyside blocks #}
+      {% if page.diptych_plate1 or page.diptych_plate2 %}
+        <div class="diptych">
+          <div class="diptych-plate1">
+            {{ page.diptych_plate1 }}
+          </div>
+          <div class="diptych-plate2">
+            {{ page.diptych_plate2 }}
+          </div>
+          <div class="diptych-clear"></div>
+        </div>
+      {% endif %}
     </div>
-    {% if page.diptych_plate1 or page.diptych_plate2 %}
-      <div class="diptych">
-        <div class="diptych-plate1">
-          {{ page.diptych_plate1 }}
-        </div>
-        <div class="diptych-plate2">
-          {{ page.diptych_plate2 }}
-        </div>
-      </div>
+    {% if footer %}
+      <footer class="footer">
+        {{ page.footer }}
+      </footer>
     {% endif %}
   </main>
 </div>

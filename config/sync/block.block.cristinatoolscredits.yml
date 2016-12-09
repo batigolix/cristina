@@ -8,8 +8,8 @@ dependencies:
     - linkup
 id: cristinatoolscredits
 theme: linkup
-region: content
-weight: 1
+region: footer
+weight: -7
 provider: null
 plugin: cri_tools_credits
 settings:
@@ -21,6 +21,8 @@ settings:
   cache:
     max_age: 3600
     contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles

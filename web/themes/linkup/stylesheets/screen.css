@@ -357,28 +357,18 @@ main {
         margin-right: 0; } }
 
 .diptych {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 65.95745%; }
-  .diptych:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 720px) {
-    .diptych {
-      float: left;
-      display: block;
-      margin-right: 3.22581%;
-      width: 61.29032%; }
-      .diptych:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 420px) {
-    .diptych {
-      float: left;
-      display: block;
-      margin-right: 6.66667%;
-      width: 100%; }
-      .diptych:last-child {
-        margin-right: 0; } }
+  max-width: 600px;
+  margin-top: 20px; }
+  .diptych .diptych-plate1 {
+    width: 290px;
+    float: left;
+    color: #555; }
+  .diptych .diptych-plate2 {
+    margin-left: 290px;
+    padding-left: 20px;
+    color: #000; }
+  .diptych .diptych-clear {
+    clear: both; }
 
 .grid-debug {
   background: lightskyblue; }

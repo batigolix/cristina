@@ -10,7 +10,7 @@ dependencies:
 id: nextprevious
 theme: linkup
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: next_previous
 settings:
