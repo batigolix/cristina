@@ -22,24 +22,4 @@ settings:
     max_age: 3600
     contexts:
       - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
-      - cache_context.user.roles
 visibility: {  }
