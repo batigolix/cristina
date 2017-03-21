@@ -35,4 +35,5 @@ content:
     third_party_settings: {  }
 hidden:
   field_group: true
+  langcode: true
   links: true

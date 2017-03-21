@@ -9,6 +9,7 @@ dependencies:
     - taxonomy.vocabulary.group
   module:
     - image
+    - path
     - text
 id: taxonomy_term.group.default
 targetEntityType: taxonomy_term
@@ -36,6 +37,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
   name:
     type: string_textfield
     weight: -5

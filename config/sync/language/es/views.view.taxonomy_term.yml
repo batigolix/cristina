@@ -1,0 +1,20 @@
+label: 'Término de taxonomía'
+description: 'Contenido perteneciente a determinado término de taxonomía.'
+display:
+  default:
+    display_title: Máster
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      arguments:
+        tid:
+          exception:
+            title: Todo
+          title: '{{ arguments.tid }}'
+  page_1:
+    display_title: Página
