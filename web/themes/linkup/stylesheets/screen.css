@@ -393,6 +393,7 @@ button {
 #block-cristinatoolsintroductionvisual img {
   max-width: 100%;
   display: block;
-  height: auto; }
+  height: auto;
+  margin-bottom: 2em; }
 
 /*# sourceMappingURL=screen.css.map */
