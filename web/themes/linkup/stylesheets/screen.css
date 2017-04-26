@@ -389,4 +389,10 @@ button {
     button a:link, button a:visited, button a:active, button a:hover {
       color: #FFF; }
 
+.field--name-field-image img,
+#block-cristinatoolsintroductionvisual img {
+  max-width: 100%;
+  display: block;
+  height: auto; }
+
 /*# sourceMappingURL=screen.css.map */
