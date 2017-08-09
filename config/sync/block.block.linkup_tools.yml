@@ -12,7 +12,7 @@ _core:
   default_config_hash: xCOijLdB1-UgXxQ9a0D1_pd8vxNEhfMnxXZc8jYhHjs
 id: linkup_tools
 theme: linkup
-region: '-1'
+region: content
 weight: -3
 provider: null
 plugin: 'system_menu_block:tools'

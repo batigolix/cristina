@@ -8,7 +8,7 @@ _core:
   default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
 id: seven_local_tasks
 theme: seven
-region: '-1'
+region: header
 weight: -2
 provider: null
 plugin: local_tasks_block
