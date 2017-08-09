@@ -226,9 +226,8 @@ main {
     font-size: 0.9em; }
     main .work-groups ul li.work, main .works ul li.work, main .news ul li.work {
       float: left;
-      height: 130px;
-      width: 200px;
-      overflow: hidden; }
+      height: 160px;
+      width: 200px; }
       main .work-groups ul li.work h2, main .works ul li.work h2, main .news ul li.work h2 {
         font-size: 0.9em;
         font-weight: normal;

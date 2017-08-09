@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.work.body
     - field.field.node.work.field_group
     - field.field.node.work.field_image
-    - image.style.thumbnail
+    - image.style.small
     - node.type.work
   module:
     - cri_tools
@@ -25,14 +25,16 @@ content:
     settings:
       trim_length: 240
     third_party_settings: {  }
+    region: content
   field_image:
     type: single_image
     weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: small
       image_link: content
     third_party_settings: {  }
+    region: content
 hidden:
   field_group: true
   langcode: true
