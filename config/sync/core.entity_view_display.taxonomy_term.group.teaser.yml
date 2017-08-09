@@ -22,6 +22,7 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_image:
     type: image
     weight: 0
@@ -30,6 +31,7 @@ content:
       image_style: thumbnail
       image_link: content
     third_party_settings: {  }
+    region: content
   field_year:
     type: string
     weight: 1
@@ -37,5 +39,6 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
 hidden:
   langcode: true

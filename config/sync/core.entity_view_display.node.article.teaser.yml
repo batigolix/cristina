@@ -24,6 +24,7 @@ content:
     settings:
       trim_length: 120
     third_party_settings: {  }
+    region: content
   field_image:
     type: single_image
     weight: 0
@@ -32,9 +33,11 @@ content:
       image_style: jumbo
       image_link: content
     third_party_settings: {  }
+    region: content
   links:
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   langcode: true
