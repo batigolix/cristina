@@ -3,7 +3,7 @@
 echo "Configuring local development environment for local.site..."
 
 # Change directory to the webroot.
-cd /var/www/privsites/cristina/web
+cd /var/www/cristina/web
 
 # Sanitize the database.
 drush sql-sanitize -y
