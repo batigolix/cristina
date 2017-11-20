@@ -6,7 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
-
+use Drupal\Core\Url;
 /**
  * Implements hook_help().
  */
@@ -21,4 +21,26 @@ function cri_tools_help($route_name, RouteMatchInterface $route_match) {
 
     default:
   }
+}
+
+/**
+ * Implements hook_menu_local_tasks_alter().
+ */
+function cri_tools_menu_local_tasks_alter(&$data, $route_name) {
+
+  kint($data);
+
+  // Add a tab linking to node/add to all pages.
+  $data['tabs'][0]['entity.taxonomy_term.canonical'] = array(
+    '#theme' => 'menu_local_task',
+    '#link' => array(
+      'title' => t('Example tab'),
+      'url' => Url::fromRoute('node.add_page'),
+      'localized_options' => array(
+        'attributes' => array(
+          'title' => t('Add content'),
+        ),
+      ),
+    ),
+  );
 }
