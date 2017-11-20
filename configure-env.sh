@@ -22,6 +22,6 @@ drush en stage_file_proxy -y
 drush en environment_indicator -y
 
 # Clear Drupal caches.
-drush cc all
+drush cr
 
 echo "Environment configuration complete."
