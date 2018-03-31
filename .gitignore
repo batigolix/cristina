@@ -22,3 +22,7 @@ web/sites/simpletest
 .DS_Store
 *.css.map
 
+license.txt
+readme.html
+
+.
