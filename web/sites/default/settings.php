@@ -761,6 +761,17 @@ $settings['trusted_host_patterns'] = array(
   '^cri\.drupalvm\.test$',
   '^cri\.kem$',
 );
+$databases['default']['default'] = array (
+    'database' => 'cri-build',
+    'username' => 'root',
+    'password' => 'root',
+    'prefix' => '',
+    'host' => 'localhost',
+    'port' => '',
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+    'driver' => 'mysql',
+);
+
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
