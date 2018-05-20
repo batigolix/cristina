@@ -7,6 +7,9 @@
 
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Url;
+use Drupal\taxonomy\Entity\Term;
+
+
 /**
  * Implements hook_help().
  */
@@ -21,4 +24,25 @@ function cri_tools_help($route_name, RouteMatchInterface $route_match) {
 
     default:
   }
+}
+
+function cri_tools_set_term_lang() {
+$term = Term::load(6);
+//$term->field_league_id->setValue('ID value');
+
+//$term->language();
+//  dd($term);$term
+
+
+  // Get the current node's language.
+  dd($term->get('langcode')->value);
+
+
+
+// Set the current node's language.
+  $term->set('langcode', 'es');
+// Save the node to persist the change.
+//  $node->save();
+
+$term->save();
 }

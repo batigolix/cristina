@@ -759,6 +759,7 @@ $settings['trusted_host_patterns'] = array(
   '^cri\.doesb\.org$',
   '^cri-build\.doesb\.org$',
   '^cri\.drupalvm\.test$',
+  '^cri\.drupalvm\.test$',
   '^cri\.kem$',
 );
 $databases['default']['default'] = array (
