@@ -758,8 +758,9 @@ $settings['trusted_host_patterns'] = array(
   '^\.cristinasilvan\.com$',
   '^cri\.doesb\.org$',
   '^cri-build\.doesb\.org$',
+  '^cri\.acc\.doesb\.org$',
   '^cri\.drupalvm\.test$',
-  '^cri\.drupalvm\.test$',
+  '^cri-build\.drupalvm\.test$',
   '^cri\.kem$',
 );
 $databases['default']['default'] = array (

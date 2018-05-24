@@ -17,18 +17,20 @@
     ],
     "require": {
         "composer/installers": "^1.2",
-        "drupal-composer/drupal-scaffold": "^2.2",
         "cweagans/composer-patches": "~1.0",
-        "drupal/core": "8.5.3",
-        "drupal/ctools": "~3.0",
-        "drupal/pathauto": "~1.0",
-        "drupal/token": "~1.0",
-        "drupal/config_readonly": "~1.0",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/admin_toolbar": "~1.0",
         "drupal/backup_migrate": "~4.0",
-        "drupal/config_split": "1.2",
-        "drupal/admin_toolbar": "~1.21",
-        "drush/drush": "~8.1",
-        "drupal/environment_indicator": "~3.0"
+        "drupal/config_filter": "~1.0",
+        "drupal/config_readonly": "~1.0",
+        "drupal/config_split": "~1.0",
+        "drupal/core": "~8.5",
+        "drupal/ctools": "~3.0",
+        "drupal/environment_indicator": "~3.0",
+        "drupal/pathauto": "~1.0",
+        "drupal/redirect": "~1.0",
+        "drupal/token": "~1.0",
+        "drush/drush": "~8.1"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -85,6 +87,7 @@
         "bin-dir": "bin/",
          "platform":{
             "php":"5.6.34"
-        }
+        },
+        "sort-packages": true
     }
 }
