@@ -762,6 +762,7 @@ $settings['trusted_host_patterns'] = array(
   '^cri\.drupalvm\.test$',
   '^cri-build\.drupalvm\.test$',
   '^cri\.kem$',
+  '^cristina\.test$',
 );
 $databases['default']['default'] = array (
     'database' => 'cri-build',
