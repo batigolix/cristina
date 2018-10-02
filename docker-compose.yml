@@ -2,6 +2,7 @@ version: "2"
 # Access site at http://${NAME}.test
 services:
   php:
+    container_name: ${NAME}-php
     image: wodby/drupal-php:${PHP_WODBY_TAG}
     environment:
       PHP_DOCROOT: ${DOCROOT} # Relative path inside the /var/www/html/ directory.
@@ -22,7 +23,7 @@ services:
     dns:
     - 172.17.0.1
   nginx:
-    container_name: ${NAME}
+    container_name: ${NAME}-nginx
     image: wodby/drupal-nginx:${DRUPAL_VERSION}-${NGINX_VERSION}
     environment:
       NGINX_SERVER_NAME: ${NAME}.test
@@ -43,23 +44,6 @@ services:
     networks:
     - default
     - common-apps_default
-  # Solr for D7 (using solr 4.x).
-  #  # Solr: configure search_api_solr to connect to hostname: solr and solr path: /solr
-  solr:
-    image: twinbit/docker-drupal-solr
-    container_name: ${NAME}-solr
-    volumes:
-    - ./sites/all/modules/contrib/search_api_solr/solr-conf/4.x:/myconfig
-    - ./.solr-data:/opt/solr/example/solr/collection1/data
-    labels:
-    - traefik.backend=${NAME}-solr
-    - traefik.frontend.rule=Host:${NAME}-solr.test # visit me at http://${NAME}-solr.test/solr !
-    - traefik.port=8983
-    - traefik.docker.network=common-apps_default
-    networks:
-    - default
-    - common-apps_default
-    entrypoint: bash -c "cp -fr /myconfig/* solr/collection1/conf/; java -Xmx1024m -DSTOP.PORT=8984 -DSTOP.KEY=stopkey -jar start.jar"
 networks:
   common-apps_default:
     external: true
