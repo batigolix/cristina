@@ -19,6 +19,7 @@ permissions:
   - 'access user profiles'
   - 'administer menu'
   - 'administer nodes'
+  - 'administer redirect settings'
   - 'administer redirects'
   - 'administer taxonomy'
   - 'change own username'
