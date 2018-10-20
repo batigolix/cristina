@@ -750,7 +750,7 @@ $settings['file_scan_ignore_directories'] = [
  * Keep this code block at the end of this file to take full effect.
  */
 $config['config_split.config_split.config_dev']['status'] = FALSE;
-$settings['install_profile'] = 'minimal';
+//$settings['install_profile'] = 'minimal';
 $config_directories['sync'] = '../config/sync';
 $settings['trusted_host_patterns'] = array(
   '^www\.cristinasilvan\.com$',
@@ -763,6 +763,7 @@ $settings['trusted_host_patterns'] = array(
   '^cri-build\.drupalvm\.test$',
   '^cri\.kem$',
   '^cristina\.test$',
+  '^cristina-build\.test$',
 );
 $databases['default']['default'] = array (
     'database' => 'cri-build',
