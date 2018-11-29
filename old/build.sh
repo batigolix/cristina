@@ -49,6 +49,7 @@ if [ -d "$BUILD_DIR" ]; then
   echo "Checkout and pull master branch"
   git fetch --tags
   git checkout -f $TAG
+  docker-compose up -d
   echo "Composer install"
   docker-compose exec --user 1000 php composer install --no-dev --ignore-platform-reqs
   echo "Update database and clear cache"
@@ -56,6 +57,5 @@ if [ -d "$BUILD_DIR" ]; then
   $DRUSH cim --y
   $DRUSH cr
 #  docker-compose exec --user 1000 php chmod -R 777 web/sites/default/files
-  docker-compose up -d
 
 fi
