@@ -756,25 +756,11 @@ $settings['trusted_host_patterns'] = array(
   '^www\.cristinasilvan\.com$',
   '^.+\.cristinasilvan\.com$',
   '^\.cristinasilvan\.com$',
-  '^cri\.doesb\.org$',
-  '^cri-build\.doesb\.org$',
-  '^cri\.acc\.doesb\.org$',
-  '^cri\.drupalvm\.test$',
-  '^cri-build\.drupalvm\.test$',
-  '^cri\.kem$',
   '^cristina\.test$',
   '^cristina-build\.test$',
+  '^cristina-stage\.doesb\.org$',
 );
-$databases['default']['default'] = array (
-    'database' => 'cri-build',
-    'username' => 'root',
-    'password' => 'root',
-    'prefix' => '',
-    'host' => 'localhost',
-    'port' => '',
-    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-    'driver' => 'mysql',
-);
+
 
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
