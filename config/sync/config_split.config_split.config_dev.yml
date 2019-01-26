@@ -4,11 +4,11 @@ status: true
 dependencies: {  }
 id: config_dev
 label: 'Development configuration'
+description: ''
 folder: ../config_dev
 module:
   devel: 0
   devel_generate: 0
-  environment_indicator: 0
   kint: 0
   stage_file_proxy: 0
 theme: {  }
