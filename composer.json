@@ -25,7 +25,7 @@
         "drupal/config_readonly": "~1.0",
         "drupal/config_split": "~1.0",
         "drupal/core": "^8.6",
-        "drupal/ctools": "^3.1",
+        "drupal/ctools": "^3.2",
         "drupal/devel": "^2.0",
         "drupal/environment_indicator": "^3.5",
         "drupal/pathauto": "~1.0",
