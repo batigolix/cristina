@@ -757,6 +757,7 @@ $settings['trusted_host_patterns'] = array(
   '^.+\.cristinasilvan\.com$',
   '^\.cristinasilvan\.com$',
   '^cristina\.test$',
+  '^cristina\.docksal$',
   '^cristina-build\.test$',
   '^cristina-stage\.doesb\.org$',
 );
