@@ -9,7 +9,7 @@ display:
                 value: '1'
                 title: Activo
               2:
-                title: Blocked
+                title: Bloqueado
             label: Estado
         combine:
           expose:
@@ -47,7 +47,7 @@ display:
           label: Estado
           settings:
             format_custom_true: Activo
-            format_custom_false: Blocked
+            format_custom_false: Bloqueado
         roles_target_id:
           label: Roles
         created:
