@@ -101,7 +101,7 @@
         ".editorconfig": "../.editorconfig",
         ".gitattributes": "../.gitattributes"
       }
-    },
+    }
     "config": {
       "bin-dir": "bin/",
       "sort-packages": true
