@@ -30,7 +30,9 @@
     "drupal/environment_indicator": "^3.5",
     "drupal/pathauto": "~1.0",
     "drupal/redirect": "^1.4",
-    "drupal/token": "~1.0"
+    "drupal/token": "~1.0",
+    "hirak/prestissimo": "^0.3.10",
+    "zaporylie/composer-drupal-optimizations": "^1.1"
   },
   "require-dev": {
     "behat/mink": "~1.7",
