@@ -1,7 +1,6 @@
 composer.json
 composer.lock
 config_dev/
-drush/
 .git/
 .gitignore
 phpunit.xml.dist
