@@ -42,7 +42,7 @@ if [ "$TAG" = '' ] ; then
 	exit 1
 fi
 
-$DRUSH cex -y
+$DRUSH config:export -y
 git add config
 git add composer.*
 git commit -m "Exports config and/or updates composer on $DT"
