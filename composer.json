@@ -19,15 +19,11 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^2.0",
         "drupal/chosen": "^2.6",
-        "drupal/config_readonly": "~1.0",
         "drupal/config_split": "~1.0",
         "drupal/core-recommended": "^8.0",
         "drupal/ctools": "^3.1",
         "drupal/environment_indicator": "^4.0",
-        "drupal/honeypot": "^2.0",
-        "drupal/migrate_plus": "^4.1",
-        "drupal/migrate_source_csv": "^2.2",
-        "drupal/migrate_tools": "^4.1",
+        "drupal/migrate_plus": "^5.1",
         "drupal/pathauto": "~1.0",
         "drupal/redirect": "^1.6",
         "drupal/redirect_404": "^1.6",
@@ -125,5 +121,10 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/config_devel": "^1.7",
+        "drupal/upgrade_status": "^3.0",
+        "palantirnet/drupal-rector": "^0.5.6"
     }
 }

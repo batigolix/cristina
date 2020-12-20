@@ -9,6 +9,7 @@
 
 namespace Drupal\cri_tools\Plugin\Block;
 
+use Drupal\Core\Link;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Url;
 
@@ -93,14 +94,14 @@ class NextPrevious extends BlockBase {
       $next = $next[0];
 
       //Find the alias of the next node
-      $next_url = \Drupal::service('path.alias_manager')
+      $next_url = \Drupal::service('path_alias.manager')
         ->getAliasByPath('/node/' . $next);
 
       //Build the URL of the next node
       $next_url = Url::fromUri('base:/' . $next_url);
 
       //Build the HTML for the next node
-      return \Drupal::l($display_text, $next_url);
+      return Link::fromTextAndUrl($display_text, $next_url);
 
     }
   }
