@@ -751,7 +751,6 @@ $settings['file_scan_ignore_directories'] = [
  */
 $config['config_split.config_split.config_dev']['status'] = FALSE;
 
-//$settings['install_profile'] = 'minimal';
 $config_directories['sync'] = '../config/sync';
 
 $settings['trusted_host_patterns'] = array(
@@ -764,6 +763,15 @@ $settings['trusted_host_patterns'] = array(
   '^cristina-build\.test$',
   '^cristina-stage\.doesb\.org$',
 );
+
+
+if (strpos(DRUPAL_ROOT, 'production')) {
+  include '/home/doesborg/public_html/cristina-project/settings/production.php';
+}
+
+if (strpos(DRUPAL_ROOT, 'stage')) {
+  include '/home/doesborg/public_html/cristina-project/settings/stage.php';
+}
 
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
