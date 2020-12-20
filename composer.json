@@ -123,7 +123,6 @@
         }
     },
     "require-dev": {
-        "drupal/config_devel": "^1.7",
         "drupal/devel": "^4.0",
         "drupal/upgrade_status": "^3.0",
         "palantirnet/drupal-rector": "^0.5.6"
