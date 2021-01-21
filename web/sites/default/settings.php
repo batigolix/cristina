@@ -764,6 +764,9 @@ $settings['trusted_host_patterns'] = array(
   '^cristina-stage\.doesb\.org$',
 );
 
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}
 
 if (strpos(DRUPAL_ROOT, 'production')) {
   include '/home/doesborg/public_html/cristina-project/settings/production.php';
@@ -773,7 +776,4 @@ if (strpos(DRUPAL_ROOT, 'stage')) {
   include '/home/doesborg/public_html/cristina-project/settings/stage.php';
 }
 
-if (file_exists(__DIR__ . '/settings.local.php')) {
-  include __DIR__ . '/settings.local.php';
-}
 
