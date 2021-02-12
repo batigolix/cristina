@@ -17,6 +17,8 @@ jobs:
           debug: true
           script: |
             cd ${{ secrets.STAGE_DIR }}
+            chmod a+w $REMOTE_STAGE_DIR/web/sites/default
+            chmod a+w $REMOTE_STAGE_DIR/web/sites/default/settings.php
             git fetch --all
             git checkout develop
             git pull origin develop

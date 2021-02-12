@@ -18,7 +18,7 @@ jobs:
           script: |
             cd ${{ secrets.PRODUCTION_DIR }}
             git fetch --all
-            git checkout develop
-            git pull origin develop
-            composer install --no-dev --ignore-platform-reqs
+            git checkout master
+            git pull origin master
+            ${{ secrets.COMPOSER }} install --no-dev --ignore-platform-reqs
             bin/drush deploy
