@@ -18,8 +18,8 @@ jobs:
           script_stop: true
           script: |
             cd ${{ secrets.STAGE_DIR }}
-            chmod a+w $REMOTE_STAGE_DIR/web/sites/default
-            chmod a+w $REMOTE_STAGE_DIR/web/sites/default/settings.php
+            chmod a+w web/sites/default
+            chmod a+w web/sites/default/settings.php
             git fetch --all
             git checkout develop
             git pull origin develop
