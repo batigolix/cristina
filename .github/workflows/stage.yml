@@ -20,5 +20,5 @@ jobs:
             git fetch --all
             git checkout develop
             git pull origin develop
-            COMPOSER install --no-dev --ignore-platform-reqs
+            ${{ secrets.COMPOSER }} install --no-dev --ignore-platform-reqs
             bin/drush deploy
