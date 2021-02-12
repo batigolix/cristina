@@ -34,3 +34,4 @@ web/sites/example.settings.local.php
 web/web.config
 
 web/.deployed_tag
+.gitattributes
