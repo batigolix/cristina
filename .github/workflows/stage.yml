@@ -15,6 +15,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: 7822
           debug: true
+          script_stop: true
           script: |
             cd ${{ secrets.STAGE_DIR }}
             chmod a+w $REMOTE_STAGE_DIR/web/sites/default
