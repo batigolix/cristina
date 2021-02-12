@@ -753,17 +753,6 @@ $config['config_split.config_split.config_dev']['status'] = FALSE;
 
 $config_directories['sync'] = '../config/sync';
 
-$settings['trusted_host_patterns'] = array(
-  '^www\.cristinasilvan\.com$',
-  '^.+\.cristinasilvan\.com$',
-  '^\.cristinasilvan\.com$',
-  '^cristinasilvan\.com$',
-  '^cristina\.test$',
-  '^cristina\.docksal$',
-  '^cristina-build\.test$',
-  '^cristina-stage\.doesb\.org$',
-);
-
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
