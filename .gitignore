@@ -32,3 +32,5 @@ db
 web/sites/default/default.settings.php
 web/sites/example.settings.local.php
 web/web.config
+
+web/.deployed_tag
