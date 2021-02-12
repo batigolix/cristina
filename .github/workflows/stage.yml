@@ -20,5 +20,5 @@ jobs:
             git fetch --all
             git checkout develop
             git pull origin develop
-            composer install --no-dev --ignore-platform-reqs
+            COMPOSER install --no-dev --ignore-platform-reqs
             bin/drush deploy
