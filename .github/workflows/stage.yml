@@ -15,10 +15,13 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: 7822
           debug: true
+          script_stop: true
           script: |
             cd ${{ secrets.STAGE_DIR }}
+            chmod a+w web/sites/default
+            chmod a+w web/sites/default/settings.php
             git fetch --all
             git checkout develop
             git pull origin develop
-            composer install --no-dev --ignore-platform-reqs
+            ${{ secrets.COMPOSER }} install --no-dev --ignore-platform-reqs
             bin/drush deploy
