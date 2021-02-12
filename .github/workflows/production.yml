@@ -2,7 +2,7 @@ name: Build & deploy stage
 on:
   push:
     branches:
-      - 'develop'
+      - 'master'
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
           port: 7822
           debug: true
           script: |
-            cd ${{ secrets.STAGE_DIR }}
+            cd ${{ secrets.PRODUCTION_DIR }}
             git fetch --all
             git checkout develop
             git pull origin develop
