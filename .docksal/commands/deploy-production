@@ -41,4 +41,4 @@ $SERVER_CONNECTION "cd $REMOTE_PRODUCTION_DIR && $REMDRUSH st"
 echo "Delete password protection on production"
 $SERVER_CONNECTION "rm -f $REMOTE_PRODUCTION_DIR/.htaccess"
 
-
+fin drush @cristina.live uli
