@@ -7,12 +7,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to droplet using SSH
+      - name: Deploy using SSH
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
+          port: 7822
           debug: true
           script: |
             cd ${{ secrets.DOCROOT }}
