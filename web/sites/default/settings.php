@@ -752,6 +752,7 @@ $settings['file_scan_ignore_directories'] = [
 $config['config_split.config_split.config_dev']['status'] = FALSE;
 
 $config_directories['sync'] = '../config/sync';
+$settings['config_sync_directory'] = '../config/sync';
 
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
