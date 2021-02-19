@@ -35,3 +35,4 @@ web/web.config
 
 web/.deployed_tag
 .gitattributes
+/.editorconfig
