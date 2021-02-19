@@ -9,7 +9,7 @@ read make_backup
 # backup the code and the db
 if [ $make_backup =  'y' ]; then
   echo "Backing up the database"
-  $SERVER_CONNECTION "cd $REMOTE_PRODUCTION_DIR && $REMDRUSH sql-dump --result-file=$REMOTE_PROJECT_DIR/db/metalartcreations-bk-$DATE.sql"
+  $SERVER_CONNECTION "cd $REMOTE_PRODUCTION_DIR && $REMDRUSH sql-dump --result-file=$REMOTE_PROJECT_DIR/db/cristina-bk-$DATE.sql"
 fi
 
 echo "Easing files and folder permissions"
