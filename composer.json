@@ -39,7 +39,6 @@
     "oomphinc/composer-installers-extender": "^2.0"
   },
   "require-dev": {
-    "drupal/coder": "^8.3",
     "drupal/config_devel": "^1.7",
     "drupal/core-dev": "^9.1",
     "drupal/devel": "^4.0",
@@ -66,6 +65,7 @@
         "[web-root]/README.txt": false,
         "[web-root]/sites/README.txt": false,
         "[web-root]/modules/README.txt": false,
+        "[web-root]/profiles/README.txt": false,
         "[web-root]/themes/README.txt": false,
         "[web-root]/libraries/README.txt": false,
         "[web-root]/web.config": false,
