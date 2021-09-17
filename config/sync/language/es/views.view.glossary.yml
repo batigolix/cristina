@@ -2,7 +2,7 @@ label: Glosario
 description: 'Todo el contenido, alfabéticamente.'
 display:
   default:
-    display_title: Máster
+    display_title: Predeterminado
     display_options:
       exposed_form:
         options:

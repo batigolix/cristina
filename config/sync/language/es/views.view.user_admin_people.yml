@@ -63,7 +63,7 @@ display:
         area_text_custom:
           content: 'No people available.'
       use_more_text: más
-    display_title: Máster
+    display_title: Predeterminado
   page_1:
     display_title: Página
     display_options:

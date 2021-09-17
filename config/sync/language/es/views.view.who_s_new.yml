@@ -2,7 +2,7 @@ label: 'Usuarios nuevos'
 description: 'Muestra un listado de las cuentas de usuarios más recientes en el sitio.'
 display:
   default:
-    display_title: Máster
+    display_title: Predeterminado
     display_options:
       exposed_form:
         options:

@@ -1,13 +1,15 @@
-uuid: f91dfed4-79de-4fbb-bb40-8ee54f4063d9
+uuid: eeddce07-59ba-4a9f-9e52-2824231476bd
 langcode: en
 status: true
 dependencies:
   theme:
-    - seven
-id: primaryadminactions
-theme: seven
+    - claro
+_core:
+  default_config_hash: osZQ9lL2jTdH5am4LJiZ29RaivhzOf6vCpoRy6FZwIE
+id: claro_local_actions
+theme: claro
 region: content
-weight: -6
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

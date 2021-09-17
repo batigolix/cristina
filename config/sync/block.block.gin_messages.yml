@@ -1,15 +1,15 @@
-uuid: 177d32b8-8092-4f47-878a-d40d38a85fcc
+uuid: a9197772-10cb-436e-a454-0b53073eccb3
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - seven
+    - gin
 _core:
-  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
-id: seven_messages
-theme: seven
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
+id: gin_messages
+theme: gin
 region: highlighted
 weight: 0
 provider: null

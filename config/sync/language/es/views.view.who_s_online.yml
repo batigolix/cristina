@@ -2,7 +2,7 @@ label: 'Bloque de usuarios conectados'
 description: 'Muestra los nombres de los usuarios de los usuarios activos más recientemente, y el número total de usuarios activos.'
 display:
   default:
-    display_title: Máster
+    display_title: Predeterminado
     display_options:
       exposed_form:
         options:
