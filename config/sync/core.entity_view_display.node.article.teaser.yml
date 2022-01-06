@@ -18,25 +18,25 @@ bundle: article
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_image:
     type: single_image
-    weight: 0
     label: hidden
     settings:
       image_style: jumbo
       image_link: content
     third_party_settings: {  }
+    weight: 0
     region: content
   links:
-    weight: 2
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   langcode: true

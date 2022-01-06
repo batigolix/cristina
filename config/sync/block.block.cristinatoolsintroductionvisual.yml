@@ -16,11 +16,11 @@ plugin: cri_tools_intro_visual
 settings:
   id: cri_tools_intro_visual
   label: 'Cristina tools: introduction visual'
-  provider: cri_tools
   label_display: '0'
+  provider: cri_tools
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

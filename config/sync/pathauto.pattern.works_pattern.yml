@@ -11,12 +11,12 @@ pattern: 'works/[node:field_group:0:entity]/[node:title]'
 selection_criteria:
   d6478908-20e2-4240-a644-fbfc16ab78af:
     id: node_type
-    bundles:
-      work: work
     negate: false
+    uuid: d6478908-20e2-4240-a644-fbfc16ab78af
     context_mapping:
       node: node
-    uuid: d6478908-20e2-4240-a644-fbfc16ab78af
+    bundles:
+      work: work
 selection_logic: and
 weight: -5
 relationships: {  }

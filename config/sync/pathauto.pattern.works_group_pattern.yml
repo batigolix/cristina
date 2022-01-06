@@ -12,12 +12,12 @@ pattern: 'works/[term:name]'
 selection_criteria:
   cd29097c-8e3c-4b6d-87e8-c1f4e8cd8209:
     id: 'entity_bundle:taxonomy_term'
-    bundles:
-      group: group
     negate: false
+    uuid: cd29097c-8e3c-4b6d-87e8-c1f4e8cd8209
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: cd29097c-8e3c-4b6d-87e8-c1f4e8cd8209
+    bundles:
+      group: group
 selection_logic: and
 weight: -5
 relationships: {  }

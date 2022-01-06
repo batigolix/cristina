@@ -11,12 +11,12 @@ pattern: 'news/[node:title]'
 selection_criteria:
   67db9e2d-12d3-43f5-881c-d1972b4548a4:
     id: node_type
-    bundles:
-      article: article
     negate: false
+    uuid: 67db9e2d-12d3-43f5-881c-d1972b4548a4
     context_mapping:
       node: node
-    uuid: 67db9e2d-12d3-43f5-881c-d1972b4548a4
+    bundles:
+      article: article
 selection_logic: and
 weight: -5
 relationships: {  }

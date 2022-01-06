@@ -16,13 +16,13 @@ plugin: next_previous
 settings:
   id: next_previous
   label: 'Next Previous'
-  provider: cri_tools
   label_display: '0'
+  provider: cri_tools
 visibility:
   node_type:
     id: node_type
-    bundles:
-      work: work
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      work: work

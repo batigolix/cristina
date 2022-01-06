@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: YrQtUD-tjwXmWch1oNpPqr3qb5S17-dXdlKwqhiHjNI
 punctuation:
   double_quotes: 0
   quotes: 0
@@ -40,5 +42,3 @@ reduce_ascii: true
 case: true
 ignore_words: 'a, an, as, at, before, but, by, for, from, is, in, into, like, of, off, on, onto, per, since, than, the, this, that, to, up, via, with'
 update_action: 0
-_core:
-  default_config_hash: YrQtUD-tjwXmWch1oNpPqr3qb5S17-dXdlKwqhiHjNI

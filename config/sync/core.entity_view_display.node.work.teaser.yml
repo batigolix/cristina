@@ -20,20 +20,20 @@ mode: teaser
 content:
   body:
     type: text_summary_or_trimmed
-    weight: 1
     label: hidden
     settings:
       trim_length: 240
     third_party_settings: {  }
+    weight: 1
     region: content
   field_image:
     type: single_image
-    weight: 0
     label: hidden
     settings:
       image_style: small
       image_link: content
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_group: true

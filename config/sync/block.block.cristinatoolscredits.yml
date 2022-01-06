@@ -15,12 +15,13 @@ plugin: cri_tools_credits
 settings:
   id: cri_tools_credits
   label: Credits
-  provider: cri_tools
   label_display: '0'
+  provider: cri_tools
   credits_markup_string: 'All work (c) 2010 Cristina Silván. All rights reserved.'
   cache:
     max_age: 3600
     contexts:
+      - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles

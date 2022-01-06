@@ -16,8 +16,8 @@ plugin: cri_tools_intro_spanish
 settings:
   id: cri_tools_intro_spanish
   label: 'Introduction in spanish'
-  provider: cri_tools
   label_display: '0'
+  provider: cri_tools
   intro_spanish_markup_string: 'El parque de atracciones es ese espacio especular en el que las fronteras entre lo real y lo virtual se diluyen. Y es que esa arquitectura de luz que centellea prendida en la oscuridad de la noche, tiene algo de espectral. Incluso de inverosímil, en el difícil equilibrio de fuerzas antigravitatorias que la sostiene.<br /><br /><br />LOS PRODIGIOS DE LA VISIÓN<br />Rosa Gutiérrez Herranz</p>'
   cache:
     max_age: 3600
@@ -25,9 +25,10 @@ settings:
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
+      - cache_context.user.roles
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

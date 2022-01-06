@@ -16,8 +16,8 @@ plugin: cri_tools_intro_english
 settings:
   id: cri_tools_intro_english
   label: 'Introduction in english'
-  provider: cri_tools
   label_display: '0'
+  provider: cri_tools
   intro_english_markup_string: 'The amusement park is the mirror-image space in which the boundaries between the real and the virtual fade away. The fact is that there is something ghostly about that illuminated architecture, sparkling, caught up in the darkness of the night, yet unlikely in the difficult balance of anti-gravitational forces that hold it up.<br /><br /><br />THE WONDERS OF VISION<br />Rosa Gutiérrez Herranz'
   cache:
     max_age: 3600
@@ -25,9 +25,10 @@ settings:
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
+      - cache_context.user.roles
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'
