@@ -36,3 +36,5 @@ web/web.config
 web/.deployed_tag
 .gitattributes
 /.editorconfig
+
+tests/backstop/backstop_data
