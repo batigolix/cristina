@@ -13,8 +13,8 @@ git pull origin master
 #ddev composer --version -n
 ddev composer validate -n
 ddev composer update -n
-ddev drush @ddev updb -y
-ddev drush @ddev config:export -y
+ddev drush @self updb -y
+ddev drush @self config:export -y
 git add composer.lock
 git add config/sync
 git commit -m "updating composer packages"
