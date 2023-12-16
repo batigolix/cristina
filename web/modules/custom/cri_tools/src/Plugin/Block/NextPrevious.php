@@ -86,7 +86,7 @@ class NextPrevious extends BlockBase {
     if ($term_target_id) {
       $query->condition('field_group.target_id', $term_target_id);
     }
-    $next = $query->execute();
+    $next = $query->accessCheck(TRUE)->execute();
 
     //If this is not the youngest (or oldest) node
     if (!empty($next) && is_array($next)) {
