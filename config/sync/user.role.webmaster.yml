@@ -1,7 +1,25 @@
 uuid: 246e4411-b329-4ea2-a806-368fe58efa07
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.advanced_html
+    - filter.format.restricted_html
+    - node.type.article
+    - node.type.page
+    - node.type.work
+    - taxonomy.vocabulary.group
+  module:
+    - contextual
+    - file
+    - filter
+    - node
+    - path
+    - redirect
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
 id: webmaster
 label: Webmaster
 weight: 2
