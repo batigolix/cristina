@@ -44,8 +44,6 @@
     "oomphinc/composer-installers-extender": "^2.0"
   },
   "require-dev": {
-    "drupal/config_devel": "^1.7",
-    "drupal/core-dev": "^9.1",
     "phpspec/prophecy-phpunit": "^2.0"
   },
   "conflict": {
