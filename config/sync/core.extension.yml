@@ -6,8 +6,7 @@ module:
   admin_toolbar_tools: 0
   block: 0
   breakpoint: 0
-  ckeditor: 0
-  color: 0
+  ckeditor5: 0
   config: 0
   config_filter: 0
   config_split: 0
@@ -33,6 +32,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  phpass: 0
   redirect: 0
   redirect_404: 0
   shortcut: 0
@@ -42,14 +42,13 @@ module:
   token: 0
   toolbar: 0
   update: 0
+  upgrade_status: 0
   user: 0
   views_ui: 0
   pathauto: 1
   views: 10
   minimal: 1000
 theme:
-  stable: 0
-  classy: 0
   linkup: 0
   claro: 0
   gin: 0

@@ -1,7 +1,10 @@
 uuid: b322244f-6290-4623-a112-9c4d038469c9
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - file
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
@@ -10,3 +13,4 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
+  - 'delete own files'
