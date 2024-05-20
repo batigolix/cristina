@@ -52,7 +52,6 @@ permissions:
   - 'delete any work content'
   - 'delete article revisions'
   - 'delete own article content'
-  - 'delete own files'
   - 'delete own page content'
   - 'delete own work content'
   - 'delete page revisions'
