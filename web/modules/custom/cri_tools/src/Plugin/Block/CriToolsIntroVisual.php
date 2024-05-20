@@ -19,7 +19,7 @@ class CriToolsIntroVisual extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $path = drupal_get_path('module', 'cri_tools');
+    $path = \Drupal::service('extension.list.module')->getPath('cri_tools');
     return [
       '#theme' => 'image',
       '#width' => 600,

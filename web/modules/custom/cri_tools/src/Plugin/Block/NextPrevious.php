@@ -78,7 +78,7 @@ class NextPrevious extends BlockBase {
     }
 
     //Looks up 1 node younger (or older) than the current node
-    $query = \Drupal::entityQuery('node');
+    $query = \Drupal::entityQuery('node')->accessCheck(TRUE);
     $query->condition('created', $created_time, $comparison_operator)
       ->condition('type', 'work')
       ->sort('created', $sort)

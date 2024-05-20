@@ -28,7 +28,6 @@
     "drupal/core-project-message": "^9.1",
     "drupal/core-recommended": "^9.5",
     "drupal/ctools": "^3.4",
-    "drupal/devel_entity_updates": "^4.1",
     "drupal/environment_indicator": "^4.0",
     "drupal/fieldblock": "^2.0@alpha",
     "drupal/gin": "^3.0@alpha",
@@ -39,7 +38,6 @@
     "drupal/stage_file_proxy": "^2.1",
     "drupal/token": "^1.9",
     "drupal/upgrade_status": "^4.3",
-    "drush/drush": "^11.6",
     "harvesthq/chosen": "^1.8",
     "oomphinc/composer-installers-extender": "^2.0"
   },
