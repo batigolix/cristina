@@ -37,7 +37,7 @@
     "drupal/honeypot": "^2.0",
     "drupal/pathauto": "^1.8",
     "drupal/redirect": "^1.6",
-    "drupal/stage_file_proxy": "^2.1",
+    "drupal/stage_file_proxy": "^3.0",
     "drupal/token": "^1.9",
     "drupal/upgrade_status": "^4.3",
     "drush/drush": "^12.5",
