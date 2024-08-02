@@ -46,7 +46,7 @@
   },
   "require-dev": {
     "drupal/config_devel": "^1.7",
-    "drupal/core-dev": "^10",
+    "drupal/core-dev": "^11",
     "drupal/devel": "^5.1",
     "phpspec/prophecy-phpunit": "^2.0"
   },
