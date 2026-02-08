@@ -13,7 +13,6 @@ folder: ../config_dev
 module:
   devel: 0
   devel_generate: 0
-  stage_file_proxy: 0
 theme: {  }
 complete_list: {  }
 partial_list: {  }
