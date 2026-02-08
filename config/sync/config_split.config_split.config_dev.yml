@@ -10,7 +10,10 @@ stackable: false
 no_patching: false
 storage: null
 folder: ../config_dev
-module: {  }
+module:
+  devel: 0
+  devel_generate: 0
+  stage_file_proxy: 0
 theme: {  }
 complete_list: {  }
 partial_list: {  }

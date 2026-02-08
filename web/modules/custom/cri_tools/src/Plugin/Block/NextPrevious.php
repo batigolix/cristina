@@ -65,7 +65,7 @@ class NextPrevious extends BlockBase {
    * @param  string $created_time a Unix time stamp
    * @return string an html link to the next or previous node
    */
-  private function generateNextPrevious($direction = 'next', $created_time, $term_target_id = NULL) {
+  private function generateNextPrevious($direction, $created_time, $term_target_id = NULL) {
     if ($direction === 'next') {
       $comparison_operator = '>';
       $sort = 'ASC';

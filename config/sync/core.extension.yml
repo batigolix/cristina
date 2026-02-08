@@ -6,13 +6,11 @@ module:
   admin_toolbar_tools: 0
   block: 0
   breakpoint: 0
-  ckeditor5: 0
   config: 0
   config_filter: 0
   config_split: 0
   contextual: 0
   cri_tools: 0
-  ctools: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
@@ -32,6 +30,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  phpass: 0
   redirect: 0
   redirect_404: 0
   shortcut: 0
@@ -48,6 +47,8 @@ module:
   views: 10
   minimal: 1000
 theme:
+  stable: 0
+  classy: 0
   linkup: 0
   claro: 0
   gin: 0
