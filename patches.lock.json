@@ -1,0 +1,17 @@
+{
+    "_hash": "be9df909ba820f3bf8b2114fccb7fa9b726019910e7af83773def85c6be887c4",
+    "patches": {
+        "drupal/fieldblock": [
+            {
+                "package": "drupal/fieldblock",
+                "description": "PHP exception when placing block",
+                "url": "https://www.drupal.org/files/issues/fieldblock_get_complete_form_state_2810783_1.patch",
+                "sha256": "60aa49c06f26f5a021d64f9a256b1b146af4bb92146aec7a9d4d892e53a28579",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}
