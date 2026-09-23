@@ -62,7 +62,8 @@
       "drupal/core-project-message": true,
       "oomphinc/composer-installers-extender": true,
       "php-http/discovery": true,
-      "phpstan/extension-installer": true
+      "phpstan/extension-installer": true,
+      "symfony/runtime": true
     }
   },
   "extra": {
@@ -93,11 +94,7 @@
         }
       }
     },
-    "patches": {
-      "drupal/fieldblock": {
-        "PHP exception when placing block": "https://www.drupal.org/files/issues/fieldblock_get_complete_form_state_2810783_1.patch"
-      }
-    },
+    "patches": {},
       "installer-paths": {
       "web/core": [
         "type:drupal-core"
