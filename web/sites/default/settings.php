@@ -773,3 +773,25 @@ $ddev_settings = dirname(__FILE__) . '/settings.ddev.php';
 if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
   require $ddev_settings;
 }
+
+/**
+ * Disable HTML5 form validation.
+ *
+ * Matches the Drupal 12 default and removes the setting entirely in
+ * Drupal 13.
+ *
+ * @see https://www.drupal.org/node/3496714
+ */
+$settings['enable_html5_validation'] = FALSE;
+
+/**
+ * Use READ COMMITTED transaction isolation for MySQL.
+ *
+ * REPEATABLE READ (MySQL default) can cause deadlocks under Drupal's
+ * concurrency patterns.
+ *
+ * @see https://www.drupal.org/node/2873853
+ */
+if (!empty($databases['default']['default']) && str_starts_with($databases['default']['default']['driver'] ?? '', 'mysql')) {
+  $databases['default']['default']['init_commands']['isolation'] = "SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED";
+}

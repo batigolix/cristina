@@ -36,6 +36,11 @@ parameters:
     # @default none
     # cookie_domain: '.example.com'
     #
+    # SameSite cookie attribute. 'Lax' allows the cookie on top-level
+    # navigations from external sites (safe default per OWASP).
+    # @default none
+    cookie_samesite: 'Lax'
+    #
   twig.config:
     # Twig debugging:
     #
