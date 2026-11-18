@@ -36,7 +36,7 @@
     "drupal/stable": "^2.1",
     "drupal/tagify": "^2.0",
     "drupal/token": "^1.9",
-    "drupal/upgrade_status": "^4.3",
+    "drupal/upgrade_status": "^5.0",
     "drush/drush": "^12.5 || ^13",
     "oomphinc/composer-installers-extender": "^2.0"
   },
